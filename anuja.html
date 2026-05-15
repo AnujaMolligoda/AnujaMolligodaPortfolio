@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio | Anuja Molligoda</title>
+       <link rel="stylesheet" href="anuja.css">
+       <link rel="icon" type="image/png" href="Modern green logo design.png">
+    </head>
+<body id="top">
+    <header>
+      <div class="container header-flex">
+        <div class="logo">
+    <div class="cube-logo">
+        <div class="cube">
+            <div class="cube-face front">AN</div>
+            <div class="cube-face back">AN</div>
+            <div class="cube-face right">AN</div>
+            <div class="cube-face left">AN</div>
+            <div class="cube-face top">AN</div>
+            <div class="cube-face bottom">AN</div>
+        </div>
+    </div><br>
+    <span class="logo-name">Anuja Molligoda</span>
+</div>
+          <nav>
+            <ul>
+             <li><a href="#home">Home</a></li>
+             <li><a href="#about">About us</a></li>
+             <li><a href="#contact">Contact us</a></li>
+             <li><a href="#timetable">Time table</a></li>
+             <li><a href="#career">Career</a></li>
+             <li><button class="btn-login" onclick="alert('Login page - demo')">Login</button></li>
+             <li><button class="btn-signin" onclick="alert('Sign up - demo')">Sign in</button></li>
+             <li><button id="darkModeToggle" class="dark-mode-btn">🌙 Dark Mode</button></li>
+             <li><button class="search-nav-btn" id="searchNavBtn">🔍</button></li>
+            </ul>
+          </nav>
+      </div>
+    </header>
+
+    <!-- Search Modal -->
+    <div id="searchModal" class="search-modal">
+        <div class="search-modal-content">
+            <span class="search-close">&times;</span>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search pages... Home, About, Contact, Career, Timetable..." autocomplete="off">
+                <button id="searchBtn" class="search-submit">Go</button>
+            </div>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+    </div>
+
+    <!-- Chat Bot Widget -->
+    <div id="chatWidget" class="chat-widget">
+        <div class="chat-header" id="chatHeader">
+            <span>💬 Hi, How can I help you?</span>
+            <span class="chat-close">✕</span>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-message bot">👋 Hi! I'm your AI Assistant. Ask me anything about this portfolio!</div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" placeholder="Type your question...">
+                <button id="chatSendBtn">Send</button>
+            </div>
+        </div>
+    </div>
+    <div class="chat-bubble" id="chatBubble">
+        <span>💬</span>
+    </div>
+
+    <!-- 5 Moving Images Section -->
+    <div class="moving-images-container">
+        <div class="moving-image" id="img1">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="HTML Icon">
+            <span class="img-label">HTML5</span>
+        </div>
+        <div class="moving-image" id="img2">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS Icon">
+            <span class="img-label">CSS3</span>
+        </div>
+        <div class="moving-image" id="img3">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JS Icon">
+            <span class="img-label">JavaScript</span>
+        </div>
+        <div class="moving-image" id="img4">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="Figma Icon">
+            <span class="img-label">Figma</span>
+        </div>
+        <div class="moving-image" id="img5">
+            <img src="https://cdn-icons-png.flaticon.com/512/5969/5969054.png" alt="WordPress Icon">
+            <span class="img-label">WordPress</span>
+        </div>
+    </div>
+
+<main class="container">
+  <!-- HOME section -->
+  <section id="home" class="hero">
+    <div class="profile-circle">
+        <img src="Profile.jpeg" alt="Anuja Molligoda">
+        <div class="online-status"></div>
+    </div>
+    <h1>Hello, I'm Anuja Molligoda !!!</h1>
+    <p class="subtitle">Designer & Full Stack Developer</p>
+    <p>I create simple, honest websites that help people tell their stories. Based in Colombo, Sri Lanka, working worldwide.</p>
+    <div class="hero-tags">
+      <span>🎨 UI/UX</span>
+      <span>💻 HTML/CSS</span>
+      <span>⚡ Responsive</span>
+    </div>
+  </section>
+   <!-- WEBSITE SHOWCASE GALLERY -->
+  <section id="showcase" class="showcase-section">
+    <h2>🌟 Featured Websites</h2>
+    <p class="showcase-subtitle">Explore these amazing website designs for inspiration & learning</p>
+    
+    <div class="showcase-container">
+      <!-- Website Card 1 - E-commerce -->
+      <div class="showcase-card">
+        <div class="card-image">
+          <img src="https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=600" alt="E-commerce Website">
+          <div class="card-overlay">
+            <span class="card-category">🛍️ E-commerce</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>Modern Fashion Store</h3>
+          <p>Clean product layout with smooth animations and easy checkout process.</p>
+          <div class="card-tags">
+            <span>React</span>
+            <span>Stripe</span>
+            <span>Tailwind</span>
+          </div>
+          <button class="learn-more" onclick="window.open('https://www.shopify.com/free-tools/business-name-generator', '_blank')">View Demo →</button>
+        </div>
+      </div>
+
+      <!-- Website Card 2 - Dashboard -->
+      <div class="showcase-card">
+        <div class="card-image">
+          <img src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Analytics Dashboard">
+          <div class="card-overlay">
+            <span class="card-category">📊 Dashboard</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>Analytics Dashboard</h3>
+          <p>Interactive charts, real-time data visualization, and dark mode support.</p>
+          <div class="card-tags">
+            <span>Chart.js</span>
+            <span>API</span>
+            <span>Responsive</span>
+          </div>
+          <button class="learn-more" onclick="window.open('https://dribbble.com/tags/dashboard_design', '_blank')">View Demo →</button>
+        </div>
+      </div>
+
+      <!-- Website Card 3 - Mobile App UI -->
+      <div class="showcase-card">
+        <div class="card-image">
+          <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mobile App UI">
+          <div class="card-overlay">
+            <span class="card-category">📱 Mobile App</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>Fitness Tracker App</h3>
+          <p>User-friendly interface, workout tracking, and progress statistics.</p>
+          <div class="card-tags">
+            <span>Flutter</span>
+            <span>Firebase</span>
+            <span>UI/UX</span>
+          </div>
+          <button class="learn-more" onclick="window.open('https://dribbble.com/tags/mobile_app_ui', '_blank')">View Demo →</button>
+        </div>
+      </div>
+
+      <!-- Website Card 4 - Portfolio -->
+      <div class="showcase-card">
+        <div class="card-image">
+          <img src="https://images.pexels.com/photos/6476264/pexels-photo-6476264.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Creative Portfolio">
+          <div class="card-overlay">
+            <span class="card-category">🎨 Portfolio</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>Creative Designer Portfolio</h3>
+          <p>Stunning grid layout, smooth scroll effects, and project filtering.</p>
+          <div class="card-tags">
+            <span>GSAP</span>
+            <span>CSS Grid</span>
+            <span>Animation</span>
+          </div>
+          <button class="learn-more" onclick="window.open('https://www.awwwards.com/websites/portfolio/', '_blank')">View Demo →</button>
+        </div>
+      </div>
+
+      <!-- Website Card 5 - Landing Page -->
+      <div class="showcase-card">
+        <div class="card-image">
+          <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Landing Page">
+          <div class="card-overlay">
+            <span class="card-category">🚀 Landing Page</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>SaaS Product Landing</h3>
+          <p>High-converting layout with testimonials, pricing, and CTA sections.</p>
+          <div class="card-tags">
+            <span>HTML/CSS</span>
+            <span>SEO</span>
+            <span>Mobile-first</span>
+          </div>
+          <button class="learn-more" onclick="window.open('https://cruip.com/', '_blank')">View Demo →</button>
+        </div>
+      </div>
+
+      <!-- Website Card 6 - Blog -->
+      <div class="showcase-card">
+        <div class="card-image">
+          <img src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blog Design">
+          <div class="card-overlay">
+            <span class="card-category">📝 Blog/Magazine</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>Modern Blog Platform</h3>
+          <p>Clean typography, category filters, and social media integration.</p>
+          <div class="card-tags">
+            <span>WordPress</span>
+            <span>SEO</span>
+            <span>AMP</span>
+          </div>
+          <button class="learn-more" onclick="window.open('https://webdesignmag.com/', '_blank')">View Demo →</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="showcase-footer">
+      <p>💡 <strong>Pro Tip:</strong> Click "View Demo" to explore these websites. Study their layouts, colours, and interactions for inspiration!</p><br>
+      <p>Good Luck!</p>
+    </div>
+  </section>
+
+  <!-- ABOUT US -->
+  <section id="about">
+    <h2>About us</h2>
+     <div class="about-grid">
+       <div class="about-text">
+          <p>🎈 I'm an aspiring full-stack developer beginning my journey in web development. I'm currently learning to create responsive and interactive web applications using modern technologies. Passionate about coding, problem-solving, and continuous learning, I strive to improve my skills every day. This portfolio reflects my first step into the development world and my dedication to growing into a professional developer.</p>
+    </div>
+         <div class="skills-box">
+            <h3>What We Know ?</h3>
+            <span class="skill">Web design</span>
+            <span class="skill">HTML/CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Figma</span>
+            <span class="skill">WordPress</span>
+            <span class="skill">SEO basics</span>
+            <span class="skill">Bootstrap</span>
+            <span class="skill">MySql</span>
+         </div>
+     </div>
+  </section>
+
+  <!-- CONTACT US -->
+  <section id="contact">
+    <h2>Contact us</h2>
+    <div class="contact-row">
+      <div class="contact-details">
+        <p>📞 +94 742749305</p>
+        <p>📧 anujamolligoda8@gmail.com</p>
+        <p>🏠 No.108/29/B, Enderamulla, Wattala, Sri Lanka</p>
+        <p class="reply-note">✅ At your service 24/7</p>
+      </div>
+      <div class="contact-form">
+        <form onsubmit="alert('Thanks for reaching out! I will get back to you soon.'); return false;">
+          <input type="text" placeholder="Your name" required>
+          <input type="email" placeholder="Email address" required>
+          <textarea rows="4" placeholder="Tell me about your project..."></textarea>
+          <button type="submit">Send message →</button>
+        </form>
+      </div>
+    </div>
+    <!-- Google Map Location -->
+    <div class="map-container">
+        <h3>📍 Find Me Here</h3>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3960.069398985214!2d79.91524907477107!3d7.001109993000144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMDAnMDQuMCJOIDc5wrA1NScwNC4yIkU!5e0!3m2!1sen!2slk!4v1778786583937!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                           
+            </iframe>
+        <div class="map-note">
+            <span>📍 No.108/29/B, 5th Lane,Enderamulla, Wattala, Sri Lanka</span>
+        </div>
+    </div>
+  </section>
+
+  <!-- TIME TABLE -->
+  <section id="timetable">
+    <h2>Time table - weekly schedule</h2>
+    
+    <div class="timetable-container">
+        <div class="timetable-header">
+            <div class="week-badge">📅 Week Schedule</div>
+            <div class="legend">
+                <span class="legend-lecture">🧑‍🎓 Lectures</span>
+                <span class="legend-dev">✨ Development</span>
+            </div>
+        </div>
+        
+        <div class="modern-table-wrapper">
+            <table class="modern-table">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Morning<br><span class="time-sub">9:00 AM - 12:00 PM</span></th>
+                        <th>Afternoon<br><span class="time-sub">2:00 PM - 5:00 PM</span></th>
+                        <th>Evening<br><span class="time-sub">7:00 PM - 12:00 AM</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="day-cell">📌 Monday</td>
+                        <td class="lecture-cell">🧑‍🎓 University Lectures</td>
+                        <td class="lecture-cell">🧑‍🎓 University Lectures</td>
+                        <td class="dev-cell">✨ Web Development</td>
+                    </tr>
+                    <tr>
+                        <td class="day-cell">📌 Tuesday</td>
+                        <td class="lecture-cell">🧑‍🎓 University Lectures</td>
+                        <td class="lecture-cell">🧑‍🎓 University Lectures</td>
+                        <td class="dev-cell">✨ Web Development</td>
+                    </tr>
+                    <tr>
+                        <td class="day-cell">📌 Wednesday</td>
+                        <td class="lecture-cell">🧑‍🎓 University Lectures</td>
+                        <td class="lecture-cell">🧑‍🎓 University Lectures</td>
+                        <td class="dev-cell">✨ Web Development</td>
+                    </tr>
+                    <tr>
+                        <td class="day-cell">📌 Thursday</td>
+                        <td class="lecture-cell">🧑‍🎓 University Lectures</td>
+                        <td class="lecture-cell">🧑‍🎓 University Lectures</td>
+                        <td class="dev-cell">✨ Web Development</td>
+                    </tr>
+                    <tr>
+                        <td class="day-cell">📌 Friday</td>
+                        <td class="lecture-cell">🧑‍🎓 University Lectures</td>
+                        <td class="lecture-cell">🧑‍🎓 University Lectures</td>
+                        <td class="dev-cell">✨ Web Development</td>
+                    </tr>
+                    <tr class="weekend-row">
+                        <td class="day-cell">🎉 Saturday</td>
+                        <td colspan="3" class="weekend-cell">
+                            <div class="weekend-content">
+                                <span>💻 Full Time Web Development</span>
+                                <span class="weekend-icon">🚀</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="weekend-row">
+                        <td class="day-cell">😴 Sunday</td>
+                        <td colspan="3" class="weekend-cell">
+                            <div class="weekend-content">
+                                <span>💻 Full Time Web Development</span>
+                                <span class="weekend-icon">✨</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="timetable-footer">
+            <div class="flex-note">
+                <span class="dot"></span>
+                <span>Flexible schedule for remote collaboration</span>
+            </div>
+            <div class="update-badge">
+                📅 Last updated: May 2026
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- CAREER -->
+  <section id="career">
+    <h2>Career - join the team</h2>
+    <div class="career-grid">
+       <div class="job-card">
+        <h3>💎 Benifits</h3>
+        <p>Countinuous learning through mentorship and global projrcts. Flexible hours and a hybrid work environment for everyone.</p>
+        <span class="job-tag">join</span>
+      </div>
+      <div class="job-card">
+        <h3>🎨 Web Designer</h3>
+        <p>Part-time, remote. Create beautiful landing pages and brand assets.</p>
+        <span class="job-tag">open</span>
+      </div>
+      <div class="job-card">
+        <h3>💻 Frontend Developer</h3>
+        <p>Full-time. HTML/CSS/JS required. Junior friendly.</p>
+        <span class="job-tag">apply now</span>
+      </div>
+     
+      
+    </div>
+    <p class="career-email">📩 Send your resume and portfolio to: careers@molligodaportfolio.com</p>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-address">
+      <strong>📍 Address</strong><br>No.108/29/B,<br> 5th Lane,<br>Enderamulla,<br> Wattala,<br>Sri Lanka.
+    </div>
+    <hr>
+    <div class="copyright">© 2026 Anuja Molligoda — All rights reserved</div>
+    <div class="footer-contact">hello@molligodaportfolio.com | +94 742749305</div>
+    <div class="footer-nav-links">
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#contact">Contact</a> |
+        <a href="#timetable">Timetable</a> |
+        <a href="#career">Career</a> |
+        <a href="#" id="footerSearchLink">Search</a> |
+        <a href="#" id="footerChatLink">Chat Support</a>
+    </div>
+  </div>
+</footer>
+
+<a href="#top" id="scrollBtn">⬆</a>
+
+<script>
+    // ========== DARK MODE ==========
+    const toggleBtn = document.getElementById('darkModeToggle');
+    
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        document.body.classList.add('dark-mode');
+        toggleBtn.textContent = '☀️ Light Mode';
+    }
+    
+    toggleBtn.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        
+        if (document.body.classList.contains('dark-mode')) {
+            localStorage.setItem('darkMode', 'enabled');
+            toggleBtn.textContent = '☀️ Light Mode';
+        } else {
+            localStorage.setItem('darkMode', 'disabled');
+            toggleBtn.textContent = '🌙 Dark Mode';
+        }
+    });
+
+    // ========== 5 MOVING IMAGES (Left to Right + Bottom to Top Motion) ==========
+    // Each image has its own unique path
+    const images = document.querySelectorAll('.moving-image');
+    
+    // Different movement patterns for each image
+    const movements = [
+        { x: 60, y: 30, speed: 0.02, angle: 0 },      // Image 1 - wide left-right
+        { x: 45, y: 25, speed: 0.025, angle: 1.2 },   // Image 2 - medium
+        { x: 70, y: 20, speed: 0.018, angle: 2.5 },   // Image 3 - very wide
+        { x: 35, y: 40, speed: 0.03, angle: 3.1 },    // Image 4 - vertical motion more
+        { x: 55, y: 35, speed: 0.022, angle: 4.0 }    // Image 5 - balanced
+    ];
+    
+    // Starting positions for each image (different corners)
+    const positions = [
+        { x: 50, y: 150 },    // Top left area
+        { x: window.innerWidth - 120, y: 200 },  // Top right
+        { x: 80, y: 500 },     // Middle left
+        { x: window.innerWidth - 100, y: 600 },  // Middle right
+        { x: 150, y: window.innerHeight - 150 }  // Bottom area
+    ];
+    
+    function updateImagePositions() {
+        for (let i = 0; i < images.length; i++) {
+            const img = images[i];
+            const move = movements[i];
+            const pos = positions[i];
+            
+            // Calculate new position using sine waves
+            // X moves left to right, Y moves up and down
+            const newX = pos.x + Math.sin(move.angle) * move.x;
+            const newY = pos.y + Math.cos(move.angle * 1.5) * move.y;
+            
+            img.style.left = newX + 'px';
+            img.style.top = newY + 'px';
+            
+            // Update angle for smooth animation
+            movements[i].angle += movements[i].speed;
+        }
+        requestAnimationFrame(updateImagePositions);
+    }
+    
+    // Update positions on window resize
+    window.addEventListener('resize', () => {
+        positions[0] = { x: 50, y: 150 };
+        positions[1] = { x: window.innerWidth - 120, y: 200 };
+        positions[2] = { x: 80, y: 500 };
+        positions[3] = { x: window.innerWidth - 100, y: 600 };
+        positions[4] = { x: 150, y: window.innerHeight - 150 };
+    });
+    
+    updateImagePositions();
+    
+    // Click effect on images
+    images.forEach((img, index) => {
+        img.addEventListener('click', () => {
+            const labels = ['HTML5', 'CSS3', 'JavaScript', 'Figma', 'WordPress'];
+            alert(`✨ You clicked on ${labels[index]}! I'm skilled in this technology ✨`);
+        });
+    });
+
+    // ========== SEARCH FUNCTIONALITY ==========
+    const searchModal = document.getElementById('searchModal');
+    const searchNavBtn = document.getElementById('searchNavBtn');
+    const searchClose = document.querySelector('.search-close');
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+    const searchResults = document.getElementById('searchResults');
+    const footerSearchLink = document.getElementById('footerSearchLink');
+    
+    const pageData = [
+        { name: 'Home', id: 'home', keywords: 'home, hero, main, welcome' },
+        { name: 'About Us', id: 'about', keywords: 'about, bio, skills, developer' },
+        { name: 'Contact Us', id: 'contact', keywords: 'contact, email, phone, map, address' },
+        { name: 'Time Table', id: 'timetable', keywords: 'schedule, timetable, weekly, lectures' },
+        { name: 'Career', id: 'career', keywords: 'job, career, join, work, designer, developer' }
+    ];
+    
+    function openSearchModal() {
+        searchModal.style.display = 'flex';
+        searchInput.focus();
+    }
+    
+    function closeSearchModal() {
+        searchModal.style.display = 'none';
+        searchResults.innerHTML = '';
+        searchInput.value = '';
+    }
+    
+    function performSearch() {
+        const query = searchInput.value.toLowerCase().trim();
+        if (query === '') {
+            searchResults.innerHTML = '<div class="search-result-item">🔍 Type something to search...</div>';
+            return;
+        }
+        
+        const matches = pageData.filter(page => 
+            page.name.toLowerCase().includes(query) || 
+            page.keywords.toLowerCase().includes(query)
+        );
+        
+        if (matches.length === 0) {
+            searchResults.innerHTML = '<div class="search-result-item">❌ No results found. Try: Home, About, Contact, Career</div>';
+        } else {
+            searchResults.innerHTML = matches.map(match => 
+                `<div class="search-result-item" data-id="${match.id}">
+                    🔗 Go to ${match.name}
+                </div>`
+            ).join('');
+            
+            document.querySelectorAll('.search-result-item[data-id]').forEach(el => {
+                el.addEventListener('click', () => {
+                    const id = el.getAttribute('data-id');
+                    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+                    closeSearchModal();
+                });
+            });
+        }
+    }
+    
+    if (searchNavBtn) searchNavBtn.addEventListener('click', openSearchModal);
+    if (searchClose) searchClose.addEventListener('click', closeSearchModal);
+    if (searchBtn) searchBtn.addEventListener('click', performSearch);
+    if (searchInput) {
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') performSearch();
+        });
+    }
+    if (footerSearchLink) {
+        footerSearchLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            openSearchModal();
+        });
+    }
+    
+    window.addEventListener('click', (e) => {
+        if (e.target === searchModal) closeSearchModal();
+    });
+
+    // ========== CHAT BOT FUNCTIONALITY ==========
+    const chatBubble = document.getElementById('chatBubble');
+    const chatWidget = document.getElementById('chatWidget');
+    const chatHeader = document.getElementById('chatHeader');
+    const chatClose = document.querySelector('.chat-close');
+    const chatInput = document.getElementById('chatInput');
+    const chatSendBtn = document.getElementById('chatSendBtn');
+    const chatMessages = document.getElementById('chatMessages');
+    const footerChatLink = document.getElementById('footerChatLink');
+    
+    const botResponses = {
+        hello: "👋 Hello! Welcome to my portfolio. How can I help you today?",
+        hi: "Hi there! 👋 Ask me about my skills, experience, or how to contact me!",
+        skills: "💻 I work with HTML, CSS, JavaScript, Figma, WordPress, SEO basics, Bootstrap and MySql. I'm learning full-stack development!",
+        contact: "📞 You can reach me at +94 742749305 or email anujamolligoda8@gmail.com",
+        work: "✨ I build responsive websites and web applications. Check out my timetable to see my schedule!",
+        time: "📅 My weekly schedule shows lectures in morning/afternoon and web development in evenings and weekends!",
+        career: "💼 I have openings for Web Designer and Frontend Developer. Send your resume to careers@molligodaportfolio.com",
+        help: "I'm here to help! You can ask about: skills, contact, schedule, career, or just say hi!",
+        thanks: "You're welcome! 😊 Anything else I can help with?",
+        default: "💡 I can tell you about my skills, contact info, work schedule, or career opportunities. What would you like to know?"
+    };
+    
+    function getBotResponse(message) {
+        const msg = message.toLowerCase();
+        if (msg.includes('hello') || msg.includes('hi') || msg.includes('hey')) return botResponses.hello;
+        if (msg.includes('skill') || msg.includes('know') || msg.includes('can you do')) return botResponses.skills;
+        if (msg.includes('contact') || msg.includes('email') || msg.includes('phone')) return botResponses.contact;
+        if (msg.includes('work') || msg.includes('project') || msg.includes('do')) return botResponses.work;
+        if (msg.includes('time') || msg.includes('schedule') || msg.includes('table')) return botResponses.time;
+        if (msg.includes('career') || msg.includes('job') || msg.includes('join')) return botResponses.career;
+        if (msg.includes('help')) return botResponses.help;
+        if (msg.includes('thank')) return botResponses.thanks;
+        return botResponses.default;
+    }
+    
+    function addChatMessage(text, isUser) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `chat-message ${isUser ? 'user' : 'bot'}`;
+        messageDiv.innerHTML = isUser ? `👤 ${text}` : `🤖 ${text}`;
+        chatMessages.appendChild(messageDiv);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+    
+    function sendChatMessage() {
+        const message = chatInput.value.trim();
+        if (message === '') return;
+        
+        addChatMessage(message, true);
+        chatInput.value = '';
+        
+        setTimeout(() => {
+            const response = getBotResponse(message);
+            addChatMessage(response, false);
+        }, 500);
+    }
+    
+    function openChat() {
+        chatWidget.classList.add('open');
+        chatBubble.style.display = 'none';
+    }
+    
+    function closeChat() {
+        chatWidget.classList.remove('open');
+        chatBubble.style.display = 'flex';
+    }
+    
+    if (chatBubble) chatBubble.addEventListener('click', openChat);
+    if (chatClose) chatClose.addEventListener('click', closeChat);
+    if (chatSendBtn) chatSendBtn.addEventListener('click', sendChatMessage);
+    if (chatInput) {
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendChatMessage();
+        });
+    }
+    if (footerChatLink) {
+        footerChatLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            openChat();
+        });
+    }
+</script>
+</body>
+</html>
